@@ -20,14 +20,6 @@ body{
 	background: #1A1F25;	
 	overflow-x: hidden;
 }
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    background: transparent;  /* Optional: just make scrollbar invisible */
-}
-/* Optional: show position indicator in red */
-::-webkit-scrollbar-thumb {
-    background: transparent;
-}
 .circle{
 	width: 350px;
 	height: 350px;
