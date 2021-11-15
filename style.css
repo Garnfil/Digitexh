@@ -4,24 +4,9 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Ubuntu'. sans-serif;
 	text-decoration: none;
 	scroll-behavior: smooth;
-}
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 5px grey; 
-  border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background:  #B53C49; 
-  border-radius: 10px;
 }
 h1,h2,h3{
 	font-weight: 500;
@@ -163,10 +148,11 @@ nav{
 	overflow-x: auto;
 	overflow-y: hidden;
 	padding-left: 3rem;
+	padding-right: 3rem;
 	padding-bottom: 2rem;
 }
 .image-content{
-	min-width: 100%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -176,8 +162,9 @@ nav{
 	transition: 0.8s;
 }
 .image-content img{
-	min-width: 60%;
+	min-width: 20%;
 	margin: 1rem;
+	height: 50%;
 	object-position: center center;
 	border-radius: 20px;
 	object-fit: cover;
@@ -206,12 +193,10 @@ nav{
 .service-image{
 	max-width: 100%;
 	height: 65vh;
-	overflow-x: auto;
-	overflow-y: hidden;
-	padding: 2rem 0 3rem 2rem;
+	padding: 2rem 3rem;
 }
 .serv-image-content{
-	min-width: 100%;
+	width: 100%;
 	height: 100%;
 	display: flex;
 	align-items: center;
@@ -219,11 +204,10 @@ nav{
 	transform: scale(0,0);
 	opacity: 0;
 	transition: 0.8s;
-	
 }
 .service{
-	min-width: 50%;
-	height: 100%;
+	width: 31%;
+	height: 65%;
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
@@ -232,7 +216,6 @@ nav{
 	margin-left: 1rem;
 	padding: 2rem 3rem;
 	border-radius: 20px;
-	
 }
 .symbol{
 	width: 70px;
@@ -253,14 +236,14 @@ nav{
 	text-align: center;
 }
 .service-text h1{
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	color: black;
 }
 .service-text p{
 	color: black;
 	margin-top: 1.3rem;
 	line-height: 25px;
-	font-size: 1.2rem;
+	font-size: 0.8rem;
 }
 .project-container{
 	width: 100%;
@@ -333,7 +316,7 @@ nav{
 }
 .customer{
 	width: 30%;
-	min-height: 25vh;
+	min-height: 20vh;
 	background: white;
 	border-radius: 10px;
 	padding: 2rem;
@@ -462,9 +445,16 @@ footer h2{
 	}
 	.first-image{
 		height: 35vh;
+		padding: 1rem;
+	}
+	.image-content{
+		display: flex;
+		flex-wrap: wrap;
 	}
 	.image-content img{
-		height: 100%;
+		height: 47%;
+		width: 42%;
+		margin: 0.4rem;
 		border-radius: 10px;
 	}
 	.service-content{
@@ -479,11 +469,16 @@ footer h2{
 		font-size: 1rem;
 	}
 	.service-image{
-		height: 50vh;
+		height: auto;
+		padding: 2rem;
+	}
+	.serv-image-content{
+		flex-direction: column;
 	}
 	.service{
-		min-width: 80%;
+		width: 100%;
 		padding: 1.5rem;
+		margin: 0.5rem 0;
 	}
 	.service-text p{
 		font-size: 0.8rem;
@@ -515,20 +510,13 @@ footer h2{
 		margin: 0;
 		overflow-x: hidden;
 	}
-	.customer-content{
-	  padding: 1.5rem;
-	}
-	.customer-content p{
-	  font-size: 0.8rem;
-	}
 	.customers{
 		flex-direction: column;
 	}
 	.customer{
 		width: 100%;
-		height: 25vh;
+		height: 23vh;
 		margin: 1rem 0;
-		padding: 1.5rem;
 	}
 	.customer p{
 		font-size: 1rem;
@@ -542,7 +530,7 @@ footer h2{
 	.contact-content{
 		padding: 1.2rem;
 		width: 100%;
-		height: 60%;
+		height: 50%;
 	}
 	.contact-content h1{
 		font-size: 1.9rem;
@@ -558,7 +546,7 @@ footer h2{
 	}
 	.contact-container img{
 		width: 100%;
-		height: 40%;
+		height: 50%;
 	}
 	footer{
 		flex-direction: row;
@@ -571,9 +559,6 @@ footer h2{
 	}
 	footer h5{
 		text-align: center;
-	}
-	footer a{
-	  font-size: 1.2rem;
 	}
 }
 .active{
